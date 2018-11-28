@@ -14,8 +14,8 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Laboratory Menu REST Endpoints
- * Plugin URI:        https://chiedolabs.com
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Plugin URI:        https://github.com/chiedolabs/laboratory-menu-api
+ * Description:       Generate REST API Endpoints for WordPress Menus.
  * Version:           1.0.0
  * Author:            Ricardo Fearing
  * Author URI:        https://chiedolabs.com

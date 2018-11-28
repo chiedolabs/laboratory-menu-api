@@ -1,7 +1,7 @@
 <?php
 
 /**
- * The public-facing functionality of the plugin.
+ * Functionality of the plugin.
  *
  * @link       https://chiedolabs.com
  * @since      1.0.0

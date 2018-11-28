@@ -1,6 +1,36 @@
+=== Laboratory WordPress Menus Rest API ===
+Contributors: ricardoLabs
+Donate link: https://chiedolabs.com
+Tags: menus, api
+Requires at least: 4.7.1
+Requires PHP: 7.2
+Tested up to: 4.9.8
+Stable tag: 4.9.8
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Requires PHP field is missing.
+
 # Laboratory WordPress Menus Rest API
 
 Generate API Endpoints for WordPress menus.
+
+## Installation
+
+This plugin can be installed directly from your site.
+
+* Log in and navigate to Plugins → Add New.
+* Type “Laboratory WordPress Menus Rest API” into the Search and hit Enter.
+* Locate the Laboratory WordPress Menus Rest API plugin in the list of search results and click Install Now.
+* Once installed, click the Activate link.
+* Your endpoints will automatically be available.
+
+It can also be installed manually.
+
+* Download the Laboratory WordPress Menus Rest API plugin from WordPress.org.
+* Unzip the package and move to your plugins directory.
+* Log into WordPress and navigate to the Plugins screen.
+* Locate Laboratory WordPress Menus Rest API in the list and click the Activate link.
 
 ## Available Endpoints
 
