@@ -12,7 +12,7 @@
 /**
  * Register Menu Endpoint.
  */
-function register_lab_menu_items() {
+function lab_menu_rest_menu_items() {
 	/* e.g. siteurl/wp-json/lab-menus/v2/header-menu */
 	$slug_regex = '/(?P<slug>[a-zA-Z0-9-]+)';
 
@@ -21,7 +21,7 @@ function register_lab_menu_items() {
 		$slug_regex,
 		array(
 			'methods'  => 'GET',
-			'callback' => 'menu_items_callback',
+			'callback' => 'lab_menu_rest_items_callback',
 		)
 	);
 }
@@ -31,7 +31,7 @@ function register_lab_menu_items() {
  *
  * @param Object $data The Request Object.
  */
-function menu_items_callback( $data ) {
+function lab_menu_rest_items_callback( $data ) {
 	if ( empty( $data['slug'] ) ) {
 		return new WP_Error(
 			'no_menus',

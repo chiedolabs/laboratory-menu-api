@@ -10,31 +10,22 @@
  */
 
 /**
- * Return Menu Route jSON.
+ * Register 'All Menus' Endpoint.
  */
-function return_menu_locations_callback() {
-	$locations = get_nav_menu_locations();
-	return $locations;
-}
-
-/**
- * Register Menu Endpoint.
- */
-function register_lab_menus() {
+function lab_menu_rest_all_menus() {
 	register_rest_route(
 		'lab-menus/v1/',
 		'menu-options',
 		array(
 			'methods'  => 'GET',
-			'callback' => 'return_menus_callback',
+			'callback' => 'lab_menu_rest_all_menus_callback',
 		)
 	);
 }
 
 /**
- * Return Menu Route jSON.
+ * Get All menus from the WordPress Admin Menus.
  */
-function return_menus_callback() {
-	$menus = get_all_wordpress_menus();
-	return $menus;
+function lab_menu_rest_all_menus_callback() {
+	return get_terms( 'nav_menu', array( 'hide_empty' => true ) );
 }

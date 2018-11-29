@@ -10,22 +10,22 @@
  */
 
 /**
- * Get All menus from the WordPress Admin Menus.
+ * Return menus defined by the theme.
  */
-function get_all_wordpress_menus() {
-	return get_terms( 'nav_menu', array( 'hide_empty' => true ) );
-}
-
-/**
- * Register menus defined by the theme.
- */
-function register_lab_menu_locations() {
+function lab_menu_rest_registered_locations() {
 	register_rest_route(
 		'lab-menus/v1/',
 		'menu-locations',
 		array(
 			'methods'  => 'GET',
-			'callback' => 'return_menu_locations_callback',
+			'callback' => 'lab_menu_rest_registered_menus_callback',
 		)
 	);
+}
+
+/**
+ * Get all nav menus from registred by register_nav_menu().
+ */
+function lab_menu_rest_registered_menus_callback() {
+	return get_registered_nav_menus();
 }
